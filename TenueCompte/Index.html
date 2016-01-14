@@ -14,6 +14,7 @@
             <div ng-controller="appCtrl">
                 <input ng-model="valeur" placeholder="valeur" />
                 <button ng-click="addDepense()">Ajouter dépense</button>
+                <p>Liste des dépenses et cumul (pour supprimer appuyer sur '+'</p>
                 <ul>
                     <li ng-repeat="depense in depenses">
                         {{ depense.valeur }} <span ng-click="rmDepense($index)">+</span>
